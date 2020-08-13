@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "894b5c3a-210c-4109-9110-5ea4248823ec",
+		"name": "CO Weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API - AddStation (Tempest)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://golden.scottnette.com/REST.php?Command=addStation&StationID=testing&StationType=WU",
+					"protocol": "https",
+					"host": [
+						"golden",
+						"scottnette",
+						"com"
+					],
+					"path": [
+						"REST.php"
+					],
+					"query": [
+						{
+							"key": "Command",
+							"value": "addStation"
+						},
+						{
+							"key": "StationID",
+							"value": "testing"
+						},
+						{
+							"key": "StationType",
+							"value": "WU"
+						}
+					]
+				},
+				"description": "test1"
+			},
+			"response": []
+		},
+		{
+			"name": "API - AddStation (WU)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://golden.scottnette.com/REST.php?Command=addStation&StationID=KCOGOLDE252&StationType=WU",
+					"protocol": "https",
+					"host": [
+						"golden",
+						"scottnette",
+						"com"
+					],
+					"path": [
+						"REST.php"
+					],
+					"query": [
+						{
+							"key": "Command",
+							"value": "addStation"
+						},
+						{
+							"key": "StationID",
+							"value": "KCOGOLDE252"
+						},
+						{
+							"key": "StationType",
+							"value": "WU"
+						}
+					]
+				},
+				"description": "test1"
+			},
+			"response": []
+		},
+		{
+			"name": "API - RemoveStation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://golden.scottnette.com/REST.php?Command=removeStation&StationID=testing4",
+					"protocol": "https",
+					"host": [
+						"golden",
+						"scottnette",
+						"com"
+					],
+					"path": [
+						"REST.php"
+					],
+					"query": [
+						{
+							"key": "Command",
+							"value": "removeStation"
+						},
+						{
+							"key": "StationID",
+							"value": "testing4"
+						},
+						{
+							"key": "StationType",
+							"value": "WU",
+							"disabled": true
+						}
+					]
+				},
+				"description": "test1"
+			},
+			"response": []
+		},
+		{
+			"name": "API - readStation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://golden.scottnette.com/REST.php?Command=readAllStations",
+					"protocol": "https",
+					"host": [
+						"golden",
+						"scottnette",
+						"com"
+					],
+					"path": [
+						"REST.php"
+					],
+					"query": [
+						{
+							"key": "Command",
+							"value": "readAllStations"
+						},
+						{
+							"key": "StationID",
+							"value": "testing",
+							"disabled": true
+						},
+						{
+							"key": "StationType",
+							"value": "WU",
+							"disabled": true
+						}
+					]
+				},
+				"description": "test1"
+			},
+			"response": []
+		},
+		{
+			"name": "API - GetData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://golden.scottnette.com/REST.php?Command=getRecentWxData&StationID=KCOGOLDE252&TimeStart=2020-08-11 22:59:11&TimeEnd=2020-08-13 22:59:11",
+					"protocol": "https",
+					"host": [
+						"golden",
+						"scottnette",
+						"com"
+					],
+					"path": [
+						"REST.php"
+					],
+					"query": [
+						{
+							"key": "Command",
+							"value": "getRecentWxData"
+						},
+						{
+							"key": "StationID",
+							"value": "KCOGOLDE252"
+						},
+						{
+							"key": "TimeStart",
+							"value": "2020-08-11 22:59:11"
+						},
+						{
+							"key": "TimeEnd",
+							"value": "2020-08-13 22:59:11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API - GetRecentData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://golden.scottnette.com/REST.php?Command=getRecentWxData&StationID=KCOGOLDE252&TimeStart=2020-08-11 22:59:11&TimeEnd=2020-08-13 22:59:11",
+					"protocol": "https",
+					"host": [
+						"golden",
+						"scottnette",
+						"com"
+					],
+					"path": [
+						"REST.php"
+					],
+					"query": [
+						{
+							"key": "Command",
+							"value": "getRecentWxData"
+						},
+						{
+							"key": "StationID",
+							"value": "KCOGOLDE252"
+						},
+						{
+							"key": "TimeStart",
+							"value": "2020-08-11 22:59:11"
+						},
+						{
+							"key": "TimeEnd",
+							"value": "2020-08-13 22:59:11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetData From WU",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"connection": true,
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://api.weather.com/v2/pws/observations/current?apiKey=6532d6454b8aa370768e63d6ba5a832e&stationId=KCOGOLDE216&format=json&units=e",
+					"protocol": "http",
+					"host": [
+						"api",
+						"weather",
+						"com"
+					],
+					"path": [
+						"v2",
+						"pws",
+						"observations",
+						"current"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "6532d6454b8aa370768e63d6ba5a832e"
+						},
+						{
+							"key": "stationId",
+							"value": "KCOGOLDE216"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "units",
+							"value": "e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetData From Tempest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swd.weatherflow.com/swd/rest/observations/station/25386?api_key=20c70eae-e62f-4d3b-b3a4-8586e90f3ac8",
+					"protocol": "https",
+					"host": [
+						"swd",
+						"weatherflow",
+						"com"
+					],
+					"path": [
+						"swd",
+						"rest",
+						"observations",
+						"station",
+						"25386"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "20c70eae-e62f-4d3b-b3a4-8586e90f3ac8"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
